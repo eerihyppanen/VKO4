@@ -42,7 +42,7 @@ public class University {
 
         for (int i=0; i < students.size(); ++i) {
 
-            System.out.println(i + ": " + students.get(i).getName()); // katsoin 
+            System.out.println(i + ": " + students.get(i).getName()); // katsoin .get(i).getName() ChatGPT kun sain erroria kokoajan pelkällä getName()
 
         }
 

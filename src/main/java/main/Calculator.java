@@ -16,7 +16,7 @@ public class Calculator {
 
 
 
-public static double calculateAverage(List<Grade> grades) {
+public static double calculateAverage(List<Grade> grades) { // List ei toiminut niin netistä läytyn että kyseinen kirjasto pitää ladata.
 
     if (grades.isEmpty()) {
         
