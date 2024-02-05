@@ -76,7 +76,7 @@ public class App
                     case 4:
 
                         university.listID();
-                        System.out.println("Minkä opiskelijan suoritteet llistataan?");
+                        System.out.println("Minkä opiskelijan suoritteet listataan?");
                         String selectedStudentListString = sc.nextLine();
                         int selectedStudentList = Integer.parseInt(selectedStudentListString);
                         Student selectedStudent2 = university.getStudent(selectedStudentList);
@@ -87,15 +87,15 @@ public class App
                         break;
                     
                     case 5:
-
-                        System.out.println("Minkä opiskelijan keskiarvo lasketaan?");
                         university.listID();
+                        System.out.println("Minkä opiskelijan suoritteiden keskiarvo lasketaan?");
+                        
                         String selectedStudentIndexString2 = sc.nextLine();
                         int selectedStudentIndex2 = Integer.parseInt(selectedStudentIndexString2);
 
                         Student selectedStudent3 = university.getStudent(selectedStudentIndex2);
                         double average = Calculator.calculateAverage(selectedStudent3.getGrades());
-                        System.out.println("keskiarvo: " + average);
+                        System.out.println("keskiarvo on " + average);
 
 
                         break;
@@ -126,7 +126,7 @@ public class App
 
                     case 0:
 
-                        System.out.println("Kiitos ohjelman käytötä.");
+                        System.out.println("Kiitos ohjelman käytöstä.");
                         exit = true;
 
 
